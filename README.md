@@ -12,12 +12,12 @@ The code uses `react-motion` to animate blocks in and out of the page. It's a go
 * When you click a block, it animates out of the DOM
 * But the animation is too jittery and way too slow
 
-###### Hint
+###### Hints
 * If you are not familiar with `react-motion`, the TransitionMotion component expects a function as its child. That function is called with argument `interpolatedStyles` hundreds of times a second. In this case, `react-motion` interpolates the opacity between 0 and 1 using a spring algorithm (hundreds of times a second). On every call, we take the interpolated opacity value and apply it to the `AnimatingContainer`, so the `ExpensiveToRenderBlockComponent`'s container has an animating opacity. For the user, `ExpensiveToRenderBlockComponent` doesn't visually change from render to render (except that its parent container has animating opacity, of course).
+* The problem is in the Demo render() function
 
 ###### Questions
 * Why is the animation jittery?
-* What is wrong with the render() function?
 * How would you fix this?
 
 ```
