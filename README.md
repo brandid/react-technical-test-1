@@ -4,7 +4,7 @@ This question
 * is for candidates already familiar with React
 * should take you no longer than 2 hours and shorter if you are already familiar with `react-motion`
 
-You are highly encouraged to make the code below run. Feel free to reach out if you have questions.
+You are encouraged to run the code and play with it to figure out your solution. Feel free to reach out if you have questions.
 
 ###### Problem
 
