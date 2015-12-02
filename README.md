@@ -19,6 +19,7 @@ The code uses `react-motion` to animate blocks in and out of the page. It's a go
 * There is no problem with way `react`, `react-motion` or `TransitionMotion` work, the problem is in our code below
 
 ###### Hints
+* Although using CSS animations/transitions would be a solution, that's not what we're looking for in this case
 * If you are not familiar with `react-motion`, the TransitionMotion component expects a function as its child. That function is called with argument `interpolatedStyles` hundreds of times a second. In this case, `react-motion` interpolates the opacity between 0 and 1 using a spring algorithm (hundreds of times a second). On every call, we take the interpolated opacity value and apply it to the `AnimatingContainer`, so the `ExpensiveToRenderBlockComponent`'s container has an animating opacity. For the user, `ExpensiveToRenderBlockComponent` doesn't visually change from render to render (except that its parent container has animating opacity, of course).
 * The problem is in the Demo render() function
 
